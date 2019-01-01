@@ -16,6 +16,8 @@
 		C6DDF0FB21DB573400705784 /* 300px-054Psyduck.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DDF0F721DB573400705784 /* 300px-054Psyduck.png */; };
 		C6DDF0FC21DB573400705784 /* VisualEffectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DDF0F821DB573400705784 /* VisualEffectVC.swift */; };
 		C6DDF0FD21DB573400705784 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DDF0F921DB573400705784 /* CustomCell.swift */; };
+		C6DDF10021DB5C2A00705784 /* QuaQuaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DDF0FF21DB5C2A00705784 /* QuaQuaVC.swift */; };
+		C6DDF10221DB5C3B00705784 /* 48406256_336755740493860_4134219825595547648_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6DDF10121DB5C3B00705784 /* 48406256_336755740493860_4134219825595547648_n.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C6DDF0F721DB573400705784 /* 300px-054Psyduck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "300px-054Psyduck.png"; sourceTree = "<group>"; };
 		C6DDF0F821DB573400705784 /* VisualEffectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectVC.swift; sourceTree = "<group>"; };
 		C6DDF0F921DB573400705784 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C6DDF0FF21DB5C2A00705784 /* QuaQuaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuaQuaVC.swift; sourceTree = "<group>"; };
+		C6DDF10121DB5C3B00705784 /* 48406256_336755740493860_4134219825595547648_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 48406256_336755740493860_4134219825595547648_n.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		C6DDF0F521DB573400705784 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C6DDF0FE21DB5C0C00705784 /* QuaQua */,
 				C6DDF0F621DB573400705784 /* VisualEffect */,
 			);
 			path = Features;
@@ -90,6 +95,15 @@
 				C6DDF0F821DB573400705784 /* VisualEffectVC.swift */,
 			);
 			path = VisualEffect;
+			sourceTree = "<group>";
+		};
+		C6DDF0FE21DB5C0C00705784 /* QuaQua */ = {
+			isa = PBXGroup;
+			children = (
+				C6DDF10121DB5C3B00705784 /* 48406256_336755740493860_4134219825595547648_n.jpg */,
+				C6DDF0FF21DB5C2A00705784 /* QuaQuaVC.swift */,
+			);
+			path = QuaQua;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DDF10221DB5C3B00705784 /* 48406256_336755740493860_4134219825595547648_n.jpg in Resources */,
 				C6DDF0ED21DB563900705784 /* LaunchScreen.storyboard in Resources */,
 				C6DDF0EA21DB563900705784 /* Assets.xcassets in Resources */,
 				C6DDF0E821DB563800705784 /* Main.storyboard in Resources */,
@@ -168,6 +183,7 @@
 				C6DDF0FC21DB573400705784 /* VisualEffectVC.swift in Sources */,
 				C6DDF0FD21DB573400705784 /* CustomCell.swift in Sources */,
 				C6DDF0E521DB563800705784 /* ViewController.swift in Sources */,
+				C6DDF10021DB5C2A00705784 /* QuaQuaVC.swift in Sources */,
 				C6DDF0E321DB563800705784 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 
 enum PractiseFeature {
-    case visualEffect
+    case visualEffect, quaqua
     
     var title: String {
         switch self {
         case .visualEffect:
             return "Visual Effect"
+        case .quaqua:
+            return "Qua Qua"
         }
     }
 }

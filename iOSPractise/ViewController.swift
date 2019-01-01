@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    let features: [PractiseFeature] = [.visualEffect]
+    let features: [PractiseFeature] = [.visualEffect, .quaqua]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return features.count
@@ -28,7 +28,8 @@ class ViewController: UITableViewController {
             
         case .visualEffect:
             nextViewController = VisualEffectVC()
-            
+        case .quaqua:
+            nextViewController = QuaQuaVC()
         }
         
         nextViewController.title = features[indexPath.item].title
