@@ -16,6 +16,7 @@ class VisualEffectVC: UIViewController {
         // Do any additional setup after loading the view.
         
         let img = UIImage.init(named: "300px-054Psyduck")
+        let txtStyle = TextStyle.init(size: 50, font: CustomFont.SnellRoundhand, color: UIColor.white)
         
         // background
         let bgImageView = UIImageView.init(image: img)
@@ -36,6 +37,29 @@ class VisualEffectVC: UIViewController {
         fgImageView.layer.cornerRadius = 80
         fgImageView.clipsToBounds = true
         view.addSubview(fgImageView)
+        
+        // Reference: http://nickthomas55.pixnet.net/blog/post/220808693-ios---%E6%A8%A1%E7%B3%8A%E6%95%88%E6%9E%9C-uivibrancyeffect
+        let vibrancyEffect = UIVibrancyEffect.init(blurEffect: blurEffect)
+        let vibrancyView = UIVisualEffectView(effect: vibrancyEffect)
+        vibrancyView.frame = view.bounds
+        visualEffectView.contentView.addSubview(vibrancyView)
+        
+        let vibrancyLabel = UILabel(frame: CGRect.zero)
+        vibrancyLabel.text = "Vibrancy Label"
+        vibrancyLabel.config(textStyle: txtStyle)
+        vibrancyLabel.sizeToFit()
+        vibrancyView.contentView.addSubview(vibrancyLabel)
+        vibrancyLabel.center = CGPoint.init(x: view.center.x, y: view.bounds.height * 0.8)
+
+        let normalLabel = UILabel(frame: CGRect.zero)
+        normalLabel.text = "Normal Label"
+        normalLabel.config(textStyle: txtStyle)
+        normalLabel.sizeToFit()
+        view.addSubview(normalLabel)
+        normalLabel.center = CGPoint.init(x: view.center.x, y: view.bounds.height * 0.9)
+
+        #warning("使用 SnellRoundhand-Black 字體，會有字首字尾被切掉的現象")
+        
     }
     
 
