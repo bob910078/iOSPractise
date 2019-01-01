@@ -12,6 +12,10 @@
 		C6DDF0E821DB563800705784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DDF0E621DB563800705784 /* Main.storyboard */; };
 		C6DDF0EA21DB563900705784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DDF0E921DB563900705784 /* Assets.xcassets */; };
 		C6DDF0ED21DB563900705784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DDF0EB21DB563900705784 /* LaunchScreen.storyboard */; };
+		C6DDF0FA21DB573400705784 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DDF0F421DB573400705784 /* DataStructure.swift */; };
+		C6DDF0FB21DB573400705784 /* 300px-054Psyduck.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DDF0F721DB573400705784 /* 300px-054Psyduck.png */; };
+		C6DDF0FC21DB573400705784 /* VisualEffectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DDF0F821DB573400705784 /* VisualEffectVC.swift */; };
+		C6DDF0FD21DB573400705784 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DDF0F921DB573400705784 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C6DDF0E921DB563900705784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6DDF0EC21DB563900705784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6DDF0EE21DB563900705784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6DDF0F421DB573400705784 /* DataStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
+		C6DDF0F721DB573400705784 /* 300px-054Psyduck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "300px-054Psyduck.png"; sourceTree = "<group>"; };
+		C6DDF0F821DB573400705784 /* VisualEffectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectVC.swift; sourceTree = "<group>"; };
+		C6DDF0F921DB573400705784 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		C6DDF0E121DB563800705784 /* iOSPractise */ = {
 			isa = PBXGroup;
 			children = (
-				C6DDF0E221DB563800705784 /* AppDelegate.swift */,
+				C6DDF0F521DB573400705784 /* Features */,
+				C6DDF0F921DB573400705784 /* CustomCell.swift */,
+				C6DDF0F421DB573400705784 /* DataStructure.swift */,
 				C6DDF0E421DB563800705784 /* ViewController.swift */,
 				C6DDF0E621DB563800705784 /* Main.storyboard */,
-				C6DDF0E921DB563900705784 /* Assets.xcassets */,
 				C6DDF0EB21DB563900705784 /* LaunchScreen.storyboard */,
+				C6DDF0E921DB563900705784 /* Assets.xcassets */,
+				C6DDF0E221DB563800705784 /* AppDelegate.swift */,
 				C6DDF0EE21DB563900705784 /* Info.plist */,
 			);
 			path = iOSPractise;
+			sourceTree = "<group>";
+		};
+		C6DDF0F521DB573400705784 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C6DDF0F621DB573400705784 /* VisualEffect */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C6DDF0F621DB573400705784 /* VisualEffect */ = {
+			isa = PBXGroup;
+			children = (
+				C6DDF0F721DB573400705784 /* 300px-054Psyduck.png */,
+				C6DDF0F821DB573400705784 /* VisualEffectVC.swift */,
+			);
+			path = VisualEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +153,7 @@
 				C6DDF0ED21DB563900705784 /* LaunchScreen.storyboard in Resources */,
 				C6DDF0EA21DB563900705784 /* Assets.xcassets in Resources */,
 				C6DDF0E821DB563800705784 /* Main.storyboard in Resources */,
+				C6DDF0FB21DB573400705784 /* 300px-054Psyduck.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DDF0FA21DB573400705784 /* DataStructure.swift in Sources */,
+				C6DDF0FC21DB573400705784 /* VisualEffectVC.swift in Sources */,
+				C6DDF0FD21DB573400705784 /* CustomCell.swift in Sources */,
 				C6DDF0E521DB563800705784 /* ViewController.swift in Sources */,
 				C6DDF0E321DB563800705784 /* AppDelegate.swift in Sources */,
 			);
